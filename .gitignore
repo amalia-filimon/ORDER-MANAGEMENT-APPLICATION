@@ -1,0 +1,23 @@
+# ========================
+# Java and Maven
+# ========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# ========================
+# IntelliJ IDEA
+# ========================
+.idea/
+*.iml
+*.iws
+out/
+
+# ========================
+# OS generated files
+# ========================
+.DS_Store
+Thumbs.db
