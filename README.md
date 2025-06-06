@@ -56,6 +56,28 @@ This application is a desktop tool developed in Java for managing clients, produ
 
 ---
 
+## 📁 Output
+
+All actions performed via the GUI are reflected directly in the database. Tables update in real-time.
+
+When a new order is placed:
+- A row is inserted in the `order` table
+- The corresponding product stock is automatically decreased
+- A **bill is generated as a PDF file** for the placed order
+
+📄 Example bills:
+- [`PDF40.pdf`](./PDF40.pdf)
+- [`PDF50.pdf`](./PDF50.pdf)
+
+Each PDF contains:
+- Order number
+- Client name
+- Product name and quantity
+- Unit price and total price
+- Timestamp of the order
+
+---
+
 ## 📄 JavaDoc
 
 Full API documentation is available in the [`doc/`](./doc/index.html) folder. Open `index.html` in your browser.
